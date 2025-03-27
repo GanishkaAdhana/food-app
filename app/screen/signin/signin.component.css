@@ -1,0 +1,23 @@
+.sign{
+    margin-top: 150px;
+}
+h6{
+    text-align: center;
+    margin-top: 10px;
+}
+.form{
+    position: relative;
+}
+img{
+    overflow:hidden;
+    position:absolute;
+    margin-left: 500px;
+    height:595px;
+    padding-bottom: 130px;
+}
+@media screen and (max-width:1200px) and (min-width:0px){
+    img{
+        height: 595px;
+        align-items: center;
+    }
+}

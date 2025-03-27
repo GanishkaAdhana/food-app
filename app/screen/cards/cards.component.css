@@ -1,0 +1,15 @@
+span{
+    font-weight: bold;
+}
+span:hover{
+    font-size: large;
+}
+.card{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.card:hover{
+    border-radius: 20px;
+    background:#fbfdee;
+}

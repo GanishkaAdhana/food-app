@@ -1,0 +1,31 @@
+span{
+    font-size: 100px;
+}
+p{
+    text-align: center;
+}
+button{
+    color: #198754;
+    height: 50px;
+    width: 150px;
+    border-radius: 10px;
+    border:1px #198754 solid;
+}
+button:hover{
+    background-color: #198754;
+    color: white;
+}
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 87vh;
+}
+.card{
+    height: 400px;
+    width: 800px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 3px solid #198754;
+}

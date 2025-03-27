@@ -1,0 +1,291 @@
+<app-navbar></app-navbar>
+<img class="imagee" src="../../../assets/images/korean.jpeg" class="rounded mx-auto d-block" width=600px height=400px>
+<div class="food items">
+<p class="card-text"><span>Korean Cuisine</span><br/>Korean cuisine is characterized by its bold flavors, fermented ingredients,<br/> and emphasis on communal dining, featuring dishes like kimchi, bulgogi, and bibimbap.<span><br/>We serve the best choices for YOU! <br/>Explore as much as you can.</span></p>
+</div>
+<div class="album py-5 bg-body-tertiary">
+    <div class="container">
+
+      <div class="row  row-cols-1 row-cols-sm-1 row-cols-md-2 row-cols-lg-3 g-3">
+        <div class="col">
+          <div class="card shadow-sm">
+            <img src="../../../assets/images/fggj.jpg" class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"/>
+            <div class="card-body">
+              <p class="card-text"><span>Kimchi Jjigae – Kimchi Stew</span></p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <button type="button" class="btn btn-sm btn-outline-secondary">Add to Cart</button>
+                </div>
+                <div class="dropdown">
+                  <button id="main" class="quan btn btn-secondary dropdown-toggle " data-bs-auto-close="outside" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  <small class="tag">Quantity</small>
+                  </button>
+                  <form class="fom">
+                    <ul class="dropdown-menu">
+                      <div class="input-group mb-3">
+                        <div class="buttons">
+                          <div class="p-2 mt-3 ml-auto">
+                            <button (click)="quantity('min')" id="minusButton" class="btn badge badge-info" type="button" data-action="decrease-item">-
+                            </button>
+                            </div>
+                        <div class="p-2 mt-3">
+                          <input id="myInput" class="cart_item_quantity" value="{{productQuantity}}" disabled>
+                        </div>
+                        <div class="p-2 mt-3">
+                          <button (click)="quantity('max')" id="plusButton" class="btn badge badge-secondary" type="button" data-action="increase-item">+
+                          </button>
+                          </div>
+                        </div>
+                        
+                        <div class="price p-2 mt-3">
+                          <p (click)="quantity('max')" (click)="quantity('min')" class="pri cart_item_price">{{price}}₹</p>
+                      </div>
+                        </div>
+                        <div class="butt">
+                          
+                          <button type="button" id="but" class="btn btn-sm btn-outline-secondary" routerLink="/cart">Buy</button>
+                        </div>
+                    </ul>
+                  </form>
+                  
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card shadow-sm">
+            <img src="../../../assets/images/ghjgh.jpg" class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"/>
+            <div class="card-body">
+              <p class="card-text"><span>Tteokbokki – Stir Fried Rice Cakes</span></p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <button type="button" class="btn btn-sm btn-outline-secondary">Add to Cart</button>
+                </div>
+                <div class="dropdown">
+                  <button id="main" class="quan btn btn-secondary dropdown-toggle " data-bs-auto-close="outside" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  <small class="tag">Quantity</small>
+                  </button>
+                  <form class="fom">
+                    <ul class="dropdown-menu">
+                      <div class="input-group mb-3">
+                        <div class="buttons">
+                          <div class="p-2 mt-3 ml-auto">
+                            <button (click)="quantity('min')" id="minusButton" class="btn badge badge-info" type="button" data-action="decrease-item">-
+                            </button>
+                            </div>
+                        <div class="p-2 mt-3">
+                          <input id="myInput" class="cart_item_quantity" value="{{productQuantity}}" disabled>
+                        </div>
+                        <div class="p-2 mt-3">
+                          <button (click)="quantity('max')" id="plusButton" class="btn badge badge-secondary" type="button" data-action="increase-item">+
+                          </button>
+                          </div>
+                        </div>
+                        
+                        <div class="price p-2 mt-3">
+                          <p (click)="quantity('max')" (click)="quantity('min')" class="pri cart_item_price">{{price}}₹</p>
+                      </div>
+                        </div>
+                        <div class="butt">
+                          
+                          <button type="button" id="but" class="btn btn-sm btn-outline-secondary" routerLink="/cart">Buy</button>
+                        </div>
+                    </ul>
+                  </form>
+                  
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card shadow-sm">
+            <img src="../../../assets/images/dsf.jpg" class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"/>
+            <div class="card-body">
+              <p class="card-text"><span>Bibimbap</span></p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <button type="button" class="btn btn-sm btn-outline-secondary">Add to Cart</button>
+                </div>
+                <div class="dropdown">
+                  <button id="main" class="quan btn btn-secondary dropdown-toggle " data-bs-auto-close="outside" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  <small class="tag">Quantity</small>
+                  </button>
+                  <form class="fom">
+                    <ul class="dropdown-menu">
+                      <div class="input-group mb-3">
+                        <div class="buttons">
+                          <div class="p-2 mt-3 ml-auto">
+                            <button (click)="quantity('min')" id="minusButton" class="btn badge badge-info" type="button" data-action="decrease-item">-
+                            </button>
+                            </div>
+                        <div class="p-2 mt-3">
+                          <input id="myInput" class="cart_item_quantity" value="{{productQuantity}}" disabled>
+                        </div>
+                        <div class="p-2 mt-3">
+                          <button (click)="quantity('max')" id="plusButton" class="btn badge badge-secondary" type="button" data-action="increase-item">+
+                          </button>
+                          </div>
+                        </div>
+                        
+                        <div class="price p-2 mt-3">
+                          <p (click)="quantity('max')" (click)="quantity('min')" class="pri cart_item_price">{{price}}₹</p>
+                      </div>
+                        </div>
+                        <div class="butt">
+                          
+                          <button type="button" id="but" class="btn btn-sm btn-outline-secondary" routerLink="/cart">Buy</button>
+                        </div>
+                    </ul>
+                  </form>
+                  
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card shadow-sm">
+            <img src="../../../assets/images/Gimbap – Seaweed Wrapped Rolls.jpg" class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"/>
+            <div class="card-body">
+              <p class="card-text"><span>Gimbap – Seaweed Wrapped Rolls</span></p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <button type="button" class="btn btn-sm btn-outline-secondary">Add to Cart</button>
+                </div>
+                <div class="dropdown">
+                  <button id="main" class="quan btn btn-secondary dropdown-toggle " data-bs-auto-close="outside" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  <small class="tag">Quantity</small>
+                  </button>
+                  <form class="fom">
+                    <ul class="dropdown-menu">
+                      <div class="input-group mb-3">
+                        <div class="buttons">
+                          <div class="p-2 mt-3 ml-auto">
+                            <button (click)="quantity('min')" id="minusButton" class="btn badge badge-info" type="button" data-action="decrease-item">-
+                            </button>
+                            </div>
+                        <div class="p-2 mt-3">
+                          <input id="myInput" class="cart_item_quantity" value="{{productQuantity}}" disabled>
+                        </div>
+                        <div class="p-2 mt-3">
+                          <button (click)="quantity('max')" id="plusButton" class="btn badge badge-secondary" type="button" data-action="increase-item">+
+                          </button>
+                          </div>
+                        </div>
+                        
+                        <div class="price p-2 mt-3">
+                          <p (click)="quantity('max')" (click)="quantity('min')" class="pri cart_item_price">{{price}}₹</p>
+                      </div>
+                        </div>
+                        <div class="butt">
+                          
+                          <button type="button" id="but" class="btn btn-sm btn-outline-secondary" routerLink="/cart">Buy</button>
+                        </div>
+                    </ul>
+                  </form>
+                  
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card shadow-sm">
+            <img src="../../../assets/images/sfzd.jpg" class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"/>
+            <div class="card-body">
+              <p class="card-text"><span>Budae Jjigae – Army Stew</span></p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <button type="button" class="btn btn-sm btn-outline-secondary">Add to Cart</button>
+                </div>
+                <div class="dropdown">
+                  <button id="main" class="quan btn btn-secondary dropdown-toggle " data-bs-auto-close="outside" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  <small class="tag">Quantity</small>
+                  </button>
+                  <form class="fom">
+                    <ul class="dropdown-menu">
+                      <div class="input-group mb-3">
+                        <div class="buttons">
+                          <div class="p-2 mt-3 ml-auto">
+                            <button (click)="quantity('min')" id="minusButton" class="btn badge badge-info" type="button" data-action="decrease-item">-
+                            </button>
+                            </div>
+                        <div class="p-2 mt-3">
+                          <input id="myInput" class="cart_item_quantity" value="{{productQuantity}}" disabled>
+                        </div>
+                        <div class="p-2 mt-3">
+                          <button (click)="quantity('max')" id="plusButton" class="btn badge badge-secondary" type="button" data-action="increase-item">+
+                          </button>
+                          </div>
+                        </div>
+                        
+                        <div class="price p-2 mt-3">
+                          <p (click)="quantity('max')" (click)="quantity('min')" class="pri cart_item_price">{{price}}₹</p>
+                      </div>
+                        </div>
+                        <div class="butt">
+                          
+                          <button type="button" id="but" class="btn btn-sm btn-outline-secondary" routerLink="/cart">Buy</button>
+                        </div>
+                    </ul>
+                  </form>
+                  
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card shadow-sm">
+            <img src="../../../assets/images/df.jpg" class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"/>
+            <div class="card-body">
+              <p class="card-text"><span>Yukgaejang – Spicy Korean Soup</span></p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <button type="button" class="btn btn-sm btn-outline-secondary">Add to Cart</button>
+                </div>
+                <div class="dropdown">
+                  <button id="main" class="quan btn btn-secondary dropdown-toggle " data-bs-auto-close="outside" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  <small class="tag">Quantity</small>
+                  </button>
+                  <form class="fom">
+                    <ul class="dropdown-menu">
+                      <div class="input-group mb-3">
+                        <div class="buttons">
+                          <div class="p-2 mt-3 ml-auto">
+                            <button (click)="quantity('min')" id="minusButton" class="btn badge badge-info" type="button" data-action="decrease-item">-
+                            </button>
+                            </div>
+                        <div class="p-2 mt-3">
+                          <input id="myInput" class="cart_item_quantity" value="{{productQuantity}}" disabled>
+                        </div>
+                        <div class="p-2 mt-3">
+                          <button (click)="quantity('max')" id="plusButton" class="btn badge badge-secondary" type="button" data-action="increase-item">+
+                          </button>
+                          </div>
+                        </div>
+                        
+                        <div class="price p-2 mt-3">
+                          <p (click)="quantity('max')" (click)="quantity('min')" class="pri cart_item_price">{{price}}₹</p>
+                      </div>
+                        </div>
+                        <div class="butt">
+                          
+                          <button type="button" id="but" class="btn btn-sm btn-outline-secondary" routerLink="/cart">Buy</button>
+                        </div>
+                    </ul>
+                  </form>
+                  
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <app-footer></app-footer>

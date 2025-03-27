@@ -1,0 +1,30 @@
+h6{
+    text-align: center;
+    margin-top: 10px;
+}
+.form{
+    margin-top: 150px;
+}
+.imaa{
+    height: 600px;
+    width: 300px;
+    position: absolute;
+    left: 0%;
+    margin-left: 200px;
+    padding-bottom: 145px;
+}
+.text{
+    margin-left: 17px;
+}
+.checkbox{
+    padding-left: 25px;
+}
+@media screen and (max-width:1200px) and (min-width:0px){
+    .imaa{
+        visibility: hidden;
+    }
+    .login{
+        padding: 0px 20px;
+        margin: 20px;
+    }
+}

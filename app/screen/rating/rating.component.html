@@ -1,0 +1,31 @@
+
+<div class="container d-flex justify-content-center">
+  <div class="row_1">
+      <div class="col-md-6">
+          <div class="card">
+              <div class="card-body text-center"> 
+               <span class="myratings">{{rating}}</span>
+                  <h4 class="mt-1">Rate us</h4>
+                  <p>Don't forget to leave a comment and tell how you felt using KHANA KHAZANA!</p>
+               <div class="rating rating2"> 
+                <button (click)="five('star5')" title="Give 5 stars" class="but">★</button>
+               <button (click)="four('star4')"  title="Give 4 stars" class="but">★</button>
+               <button (click)="three('star3')" title="Give 3 stars" class="but">★</button>
+               <button (click)="two('star2')" title="Give 2 stars" class="but">★</button>
+               <button (click)="one('star1')" title="Give 1 star" class="but">★</button>
+            </div>
+                  <div class="feedback justify-content-center">
+                    <div class="input-group-prepend">
+                      <span class="input-group-text">Give us your feedback! <small>*optional</small></span>
+                    </div>
+                    <textarea id="feedback" class="form-control" aria-label="With textarea" placeholder="Write here!"></textarea>
+                  </div>
+                  <div>
+                    <button class="submit justify-content-center" routerLink="/thankyou" >Submit</button>
+                  </div>
+          </div>
+</div>
+</div>
+</div>
+</div>
+<app-footer></app-footer>
